@@ -1,6 +1,4 @@
-import {FC, ReactNode, useEffect, useMemo, useState} from "react";
-import {flightService} from "../services/flight.service";
-import {IFlight} from "../interfaces/flight.interface";
+import {FC, useEffect} from "react";
 import {Flight} from "./flight";
 import {useAppDispatch, useAppSelector} from "../hooks/reduxhooks";
 import {flightActions} from "../slice/slice";
@@ -22,7 +20,7 @@ const Flights:FC<IProps> = ({search,setCount}) => {
 
     useEffect(()=>{
         setCount(filter.length)
-    },[flights])
+    },[flights, filter.length,setCount])
 
     // @ts-ignore
     return(

@@ -40,18 +40,6 @@ const flightSlice = createSlice({
                 state.flight = action.payload
             })
 })
-const filter = createSlice({
-    name:'filterSlice',
-    initialState,
-    reducers: {
-
-    },
-    extraReducers: builder =>
-        builder
-            .addCase(getAll.fulfilled, (state, action) => {
-                state.flights = action.payload
-            })
-})
 
 
 const getById = createAsyncThunk(
