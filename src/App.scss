@@ -1,0 +1,83 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.App{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.cards{
+  display: flex;
+  width: 29%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 24px;
+}
+.search{
+  display: block;
+  margin-top: 50px;
+  font-weight: 700;
+}
+.search_text{
+  margin-bottom: 10px;
+  color: #363636;
+  font-size: 20px;
+}
+.line{
+  margin-bottom: 45px;
+  width: 186%;
+}
+.highlight{
+  background: yellow;
+}
+.highlightTitle{
+  font-weight: 700 !important;
+  display: inline;
+}
+.highlightText{
+  display: inline;
+}
+.title{
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.photo{
+  &__img {
+    height: 300px;
+    width: 100%;
+  }
+}
+.box{
+  margin: 0 auto;
+  border: 2px solid #f1f1f1;
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+  top: -100px;
+  background: #fff;
+  min-height: 500px;
+  &__title{
+    font-weight: 900 !important;
+    font-size: 30px !important;
+    margin-bottom: 40px !important;
+  }
+  &__text{
+
+  }
+}
+.link{
+  font-weight: 700;
+  font-size: 16px;
+  color: #363636;
+  text-decoration: none;
+}
+.wrap{
+  display: flex;
+  flex-direction: column;
+  max-width: 1120px;
+  margin: 0 auto;
+  align-items: flex-start;
+}

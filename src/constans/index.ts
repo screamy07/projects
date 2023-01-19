@@ -1,0 +1,1 @@
+export const arrow = require('../assets/img/arrow-rght.png')
