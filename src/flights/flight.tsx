@@ -79,7 +79,7 @@ const Flight:FC<IProps> = ({flight,search}) => {
                           <CardActions disableSpacing>
                               <Link to={`/details/${flight.id}`}>
                                   <Typography sx={{paddingLeft: 1, cursor:'pointer',display:'flex',alignItems:'center',fontWeight:'700'}}>
-                                      Read more <img src={arrow}  style={{width:18, paddingLeft:5}} />
+                                      Read more <img src={arrow} alt={'arrow'}  style={{width:18, paddingLeft:5}} />
                                   </Typography>
                               </Link>
                           </CardActions>

@@ -11,7 +11,7 @@ const Detail = () => {
     const dispatch = useAppDispatch()
     useEffect(() => {
         dispatch(flightActions.getById(params))
-    }, [dispatch])
+    }, [dispatch,params])
     return (
         <>
             <div className={'photo'}>
